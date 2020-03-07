@@ -1,3 +1,13 @@
 {
-    "instructors": []
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "name": "Joice",
+      "birth": 881020800000,
+      "gender": "F",
+      "services": "Spinning, pilates",
+      "created_at": 1583545241771
+    }
+  ]
 }
