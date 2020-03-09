@@ -77,7 +77,7 @@ exports.edit = function(req, res) {
 }
 
 exports.put = function(req, res) {
-    const { id } = req.params
+    const { id } = req.body
     let index = 0
 
     const foundInstructor = data.instructors.find(function(instructor, foundIndex) {
@@ -90,7 +90,8 @@ exports.put = function(req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
     data.instructors[index] = instructor
