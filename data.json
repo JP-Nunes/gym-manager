@@ -1,13 +1,12 @@
 {
   "instructors": [
     {
-      "id": 1,
       "avatar_url": "https://media-exp1.licdn.com/dms/image/C4D03AQEWgGYIZ_lmAA/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=VcucpQUrrvYPLoeHlCcIR6wQGeXy-TxgVTw5j__ToRU",
-      "name": "Joice",
+      "name": "Joice Moraes Menezes",
       "birth": 856310400000,
       "gender": "F",
-      "services": "Yoga, Crossfit",
-      "created_at": 1583586621304
+      "services": "Spinning, pilates",
+      "id": "1"
     }
   ]
 }
