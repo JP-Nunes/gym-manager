@@ -37,7 +37,7 @@ exports.edit = function(req, res) {
 
     const member = {
         ...foundMember,
-        birth: date(foundMember.birth),
+        birth: date(foundMember.birth).iso
         
     }
 
@@ -91,7 +91,7 @@ exports.delete = function(req, res) {
 }
 
 exports.put = function(req, res) {
-    const { id } = req.body
+const { id } = req.body
     let index = 0
 
     const foundMember = data.members.find(function(member, foundIndex) {
