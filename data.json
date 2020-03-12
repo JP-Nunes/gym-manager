@@ -1,0 +1,41 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "birth": "1997-02-19",
+      "avatar_url": "https://media-exp1.licdn.com/dms/image/C4D03AQEWgGYIZ_lmAA/profile-displayphoto-shrink_200_200/0?e=1589414400&v=beta&t=nT97s32kPO2RnHdFme0vqfnI-TXY1IUUoomWtKLK7wA",
+      "name": "Joice Menezes",
+      "email": "jmmenezes-07@outlook.com",
+      "blood": "B+",
+      "weight": "58",
+      "height": "158"
+    }
+  ],
+  "instructors": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80",
+      "name": "Joice M. Menezes",
+      "birth": 856310400000,
+      "gender": "F",
+      "services": "Spinning, pilates",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1549476464-37392f717541?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80",
+      "name": "João Pedro Ferreira Nunes",
+      "birth": 854841600000,
+      "gender": "M",
+      "services": "Musculação, Crossfit",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      "name": "Mayk Brito",
+      "birth": -23890291200000,
+      "gender": "M",
+      "services": "Yoga, Pilates",
+      "created_at": 1583868252720
+    }
+  ]
+}
