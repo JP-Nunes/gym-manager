@@ -54,10 +54,10 @@ module.exports = {
     update(data, callback) {
         const query = `
         UPDATE instructors SET
-            avatar_url=($1)
-            name=($2)
-            birth=($3)
-            gender=($4)
+            avatar_url=($1),
+            name=($2),
+            birth=($3),
+            gender=($4),
             services=($5)
         WHERE id = $6
         `
@@ -68,6 +68,7 @@ module.exports = {
             date(data.birth).iso,
             data.gender,
             data.services,
+            data.id
         ]
 
         db.query(query, values, function(err, results) {
