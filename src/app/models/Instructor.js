@@ -120,9 +120,9 @@ module.exports = {
         }
 
         query = `
-        SELECT instructors.*, ${totalQuery}, coint(members) AS total_students
+        SELECT instructors.*, ${totalQuery}, count(members) AS total_students
         FROM instructors
-        LEFT JOIN members ON (instructors.id  members.instructor_id)
+        LEFT JOIN members ON (instructors.id = members.instructor_id)
         ${filterQuery}
         GROUP BY instructors.id LIMIT $1 OFFSET $2
         `
