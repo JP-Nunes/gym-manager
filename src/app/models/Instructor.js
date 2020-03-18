@@ -12,6 +12,7 @@ module.exports = {
             if(err) throw `Database Error! ${err}`
 
             callback(results.rows)
+            console.log(results.rows)
         })
     },
     
@@ -107,12 +108,10 @@ module.exports = {
             ) AS total`
 
         if(filter) {
-            
             filterQuery = `
             WHERE instructors.name ILIKE '%${filter}%'
             OR instructors.services ILIKE '%${filter}'
             `
-
             totalQuery = `(
                 SELECT count(*) FROM instructors
                 ${filterQuery}
