@@ -55,7 +55,7 @@ module.exports = {
         Member.find(req.params.id, function(member) {
             if(!member) return res.send("Member not found!")
         
-            member.birth = age(member.birth).birthDay
+            member.birth = date(member.birth).birthDay
 
             return res.render("members/show", { member })
         })
