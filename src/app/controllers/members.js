@@ -7,7 +7,7 @@ module.exports = {
         let { filter, page, limit } = req.query
 
         page = page || 1
-        limit = limit || 2
+        limit = limit || 5
         let offset = limit * (page -1)
         
         const params = {
@@ -17,9 +17,13 @@ module.exports = {
             offset,
             callback(members) {
 
-                const pagination = {
-                    total: Math.ceil(members[0].total / limit),
-                    page
+                let pagination = {}
+                
+                if(members[0]) {
+                    pagination = {
+                        total: Math.ceil(members[0].total / limit),
+                        page
+                    }
                 }
                 return res.render("members/index", { members, filter, pagination })
             }
